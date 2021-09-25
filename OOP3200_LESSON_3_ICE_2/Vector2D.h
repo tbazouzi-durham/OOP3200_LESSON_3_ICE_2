@@ -9,8 +9,11 @@ class Vector2D
 public:
 	// CONSTRUCTOR(S)
 	Vector2D();
+	Vector2D(float value);
+	// OVERLOADED CONSTRUCTOR
+	Vector2D(float x, float y);
 
-	// COPY CONSTRUCTOR
+	// Copy
 	Vector2D(const Vector2D& vector_2d);
 
 
@@ -33,8 +36,8 @@ public:
 	
 private:
 	// INSTANCE VARIABLES (class master variables)
-	float m_x;
-	float m_y;
+	float m_x{};
+	float m_y{};
 
 	// PRIVATE METHODS (private class functions)
 };
